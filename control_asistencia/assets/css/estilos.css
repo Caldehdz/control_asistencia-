@@ -1,0 +1,133 @@
+/* Importar fuente moderna Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #4f46e5;
+    --primary-hover: #4338ca;
+    --bg-dark: #0f172a;
+    --card-dark: rgba(30, 41, 59, 0.7);
+    --card-border: rgba(255, 255, 255, 0.1);
+    --text-muted: #94a3b8;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+}
+
+/* ==========================================
+   Estilos Pantalla Pública & Login (Modo Dark Glass)
+   ========================================== */
+body.bg-dark {
+    background: radial-gradient(circle at top left, #1e1b4b, #0f172a) !important;
+    min-height: 100vh;
+}
+
+.glass-card {
+    background: var(--card-dark) !important;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--card-border) !important;
+    border-radius: 20px !important;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4) !important;
+}
+
+.form-control-custom {
+    background: rgba(15, 23, 42, 0.6) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    color: #ffffff !important;
+    border-radius: 12px !important;
+    padding: 12px 16px !important;
+    transition: all 0.3s ease;
+}
+
+.form-control-custom:focus {
+    border-color: #6366f1 !important;
+    box-shadow: 0 0 15px rgba(99, 102, 241, 0.3) !important;
+}
+
+.btn-gradient {
+    background: linear-gradient(135deg, #6366f1, #4f46e5) !important;
+    border: none !important;
+    color: #ffffff !important;
+    border-radius: 12px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.5px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.btn-gradient:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(79, 70, 229, 0.4) !important;
+}
+
+/* ==========================================
+   Estilos Panel de Administración
+   ========================================== */
+.navbar {
+    background: #0f172a !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #818cf8 !important;
+}
+
+/* Tarjetas del Dashboard con efecto Hover */
+.stat-card {
+    border: none !important;
+    border-radius: 16px !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08) !important;
+}
+
+.card-icon {
+    font-size: 2.2rem;
+    opacity: 0.8;
+}
+
+/* Estilos de Tablas */
+.table-custom {
+    border-collapse: separate;
+    border-spacing: 0 8px;
+}
+
+.table-custom tbody tr {
+    background: #ffffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+
+.table-custom tbody tr:hover {
+    transform: scale(1.005);
+}
+
+.table-custom td, .table-custom th {
+    padding: 16px;
+    border: none;
+}
+
+/* Badges personalizados */
+.badge-active {
+    background-color: #dcfce7 !important;
+    color: #15803d !important;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 8px;
+}
+
+.badge-inactive {
+    background-color: #fee2e2 !important;
+    color: #b91c1c !important;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 8px;
+}
